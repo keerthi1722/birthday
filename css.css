@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image:url('https://cdn.shopify.com/s/files/1/0257/6718/2416/files/Gold_Balloon_Zoom_Background.jpg?v=1595051323') ;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+#info h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color:white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color:black;
+    text-shadow: 2px 2px 10px white;
+    margin-bottom: 20px;
+}
+h2{
+    color: black;
+}
+#birthday{
+    background-image: url('https://img.freepik.com/premium-photo/blue-birthday-background-with-balloons_198067-176671.jpg?w=2000');
+    background-size: cover;
+}
+.birthday-container {
+    background-color:white ;
+    border-radius: 20%;
+    padding: 40px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0px 4px 20px black;
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.birthday-photo {
+    max-width: 300%;
+    max-height: 400px;
+    margin-top: 20px;
+    
+    box-shadow: 0px 8px 20px #e1dedef8;
+    transition: transform 0.3s ease-in-out;
+}
+
+.birthday-photo:hover {
+    transform: scale(1.05);
+}
+
+p {
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+button {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff9933;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #ff4d00;
+    transform: scale(0.98);
+}
